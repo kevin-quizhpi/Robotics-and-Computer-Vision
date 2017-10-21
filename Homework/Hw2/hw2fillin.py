@@ -99,7 +99,9 @@ def main():
 
 	while True:
 	# display the image and wait for a keypress
-	        image = cv2.circle(image,(lx,ly), 10, (0,255,255), -1);
+		print image
+		image = cv2.circle(image,(lx,ly), 10, (0,255,255), -1);
+		print image
 		cv2.imshow(windowName, image)
 		key = cv2.waitKey(1) & 0xFF
 	

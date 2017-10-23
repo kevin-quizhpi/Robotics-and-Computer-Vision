@@ -45,6 +45,7 @@ def main():
 
 	# Problem 1: 4 levels of a guassian pyramid
 	# Press N to cycle through images
+	print('Press N to advance through images')
 	for x in range(1,5):
 		G = getGaussian(G,h)
 		display('Guassian', G)

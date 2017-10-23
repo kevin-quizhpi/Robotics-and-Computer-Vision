@@ -37,7 +37,7 @@ def getLaplacian(im, fil):
 
 
 def main():
-	image = cv2.imread('Bean.jpg',1);
+	image = cv2.imread('tstimg.jpg',1);
 	G = cv2.resize(image,(500,500))
 	image = cv2.resize(image,(500,500))
 	display(windowName, image)

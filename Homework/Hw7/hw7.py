@@ -7,9 +7,6 @@ import glob
 import h5py
 
 
-
-    
-
 def main():
 
 	im = cv2.imread('Bean.jpg', 1);
@@ -83,7 +80,7 @@ def main():
 
 	    confidence = round(float(confidence), 5)
 
-	    print("Label: {}, Confidence: {}%".format(label, (confidence * 100)))
+	    print("Label : {}, Confidence : {}%".format(label, (confidence * 100)))
 
 	    show = cv2.imread(fname, 1)
 
@@ -92,15 +89,12 @@ def main():
 
 	    cv2.rectangle(show, (0, 0), (size[0] + 5,
 	                                 size[1] + 10), (255, 255, 255), -1)
-	    cv2.putText(show, "Label: {}".format(label), (5, 15),
+	    cv2.putText(show, "Label : {}".format(label), (5, 15),
 	                0, 0.5, (0, 0, 0), 2, 4)
 
 	    cv2.imshow("Classification", show)
 	    cv2.waitKey(1000)
 	cv2.destroyAllWindows()
-
-	
-
 
 
 if __name__ == "__main__":

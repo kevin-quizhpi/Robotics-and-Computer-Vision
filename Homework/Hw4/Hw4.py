@@ -37,7 +37,7 @@ def getLaplacian(im, fil):
 
 
 def main():
-	image = cv2.imread('Bean.jpg',1);
+	image = cv2.imread('tstimg.jpg',1);
 	G = cv2.resize(image,(500,500))
 	image = cv2.resize(image,(500,500))
 	display(windowName, image)
@@ -45,6 +45,7 @@ def main():
 
 	# Problem 1: 4 levels of a guassian pyramid
 	# Press N to cycle through images
+	print('Press N to advance through images')
 	for x in range(1,5):
 		G = getGaussian(G,h)
 		display('Guassian', G)
